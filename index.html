@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Roman Tverd Reformas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f8;
+            color:#222;
+        }
+
+        /* ===== HEADER ===== */
+        header{
+    width:100%;
+    background:#1f2d3d;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:30px 60px;   /* más alto */
+    min-height:90px;     /* franja azul más grande */
+}        }
+
+        header h1{
+            font-size:34px;      /* más grande que los botones */
+    font-weight:700;
+    letter-spacing:1px;
+        }
+
+        nav{
+            display:flex;
+            gap:35px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:14px;
+            font-weight:600;
+            text-transform:uppercase;
+            letter-spacing:1px;
+        }
+
+        nav a:hover{
+            text-decoration:underline;
+        }
+
+        /* ===== HERO ===== */
+        .hero{
+            width:100%;
+            height:100vh;
+            display:flex;
+            position:relative;
+        }
+
+        .hero img{
+            width:50%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        /* Overlay central */
+        .hero-overlay{
+            position:absolute;
+            inset:0;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            background:rgba(0,0,0,0.25);
+        }
+
+        .hero-title{
+            color:white;
+            font-size:36px;
+            margin-bottom:30px;
+            max-width:800px;
+            line-height:1.2;
+        }
+
+        .hero-buttons{
+            display:flex;
+            gap:25px;
+        }
+
+        .hero-buttons a{
+            padding:18px 40px;
+            border:1.5px solid rgba(255,255,255,0.7);
+            color:white;
+            text-decoration:none;
+            font-weight:600;
+            letter-spacing:1px;
+            text-transform:uppercase;
+            background:rgba(255,255,255,0.12);
+            backdrop-filter: blur(4px);
+            transition:0.3s;
+        }
+
+        .hero-buttons a:hover{
+            background:rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+        }
+
+        /* ===== ABOUT ===== */
+        .about{
+            max-width:1200px;
+            margin:70px auto;
+            padding:0 50px;
+            text-align:left;
+        }
+
+        .about h2{
+            color:#1f2d3d;
+            font-size:28px;
+            margin-bottom:15px;
+        }
+
+        .about p{
+            max-width:750px;
+            font-size:16px;
+            line-height:1.7;
+            color:#333;
+        }
+
+        /* ===== FOOTER ===== */
+        footer{
+            background:#16202b;
+            color:white;
+            text-align:center;
+            padding:25px;
+            margin-top:70px;
+            font-size:14px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media(max-width:900px){
+            .hero{
+                flex-direction:column;
+                height:auto;
+            }
+
+            .hero img{
+                width:100%;
+                height:50vh;
+            }
+
+            .hero-title{
+                font-size:26px;
+                padding:0 20px;
+            }
+
+            .hero-buttons{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            header{
+                flex-direction:column;
+                gap:15px;
+                text-align:center;
+            }
+
+            nav{
+                gap:20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Roman Tverd Reformas</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="trabajos.html">Trabajos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="piscina.jpg" alt="Piscina reformada">
+        <img src="interior.jpg" alt="Reforma interior de vivienda">
+
+        <!-- Overlay central -->
+        <div class="hero-overlay">
+            <div class="hero-title">
+                Reformas profesionales con acabados de alta calidad
+            </div>
+
+          <div class="hero-buttons">
+    <a href="instalaciones-trabajos.html">Reformas</a>
+    <a href="banos-trabajos.html">Baño</a>
+    <a href="cocina-trabajos.html">Cocina</a>
+</div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="about">
+        <h2>¿Por qué elegirnos a nosotros?</h2>
+        <p>
+            En Roman Tverd Reformas ofrecemos soluciones profesionales, eficientes y adaptadas a cada cliente.
+            Trabajamos con materiales de calidad, cuidamos cada detalle del proceso y garantizamos resultados duraderos.
+            Desde pequeñas reformas hasta proyectos integrales, nuestro compromiso es transformar tu espacio con seriedad,
+            responsabilidad y acabados de alto nivel. La confianza de nuestros clientes es nuestra mejor garantía.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Roman Tverd Reformas · Todos los derechos reservados
+    </footer>
+
+</body>
+</html>

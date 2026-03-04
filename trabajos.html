@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Trabajos | Roman Tverd Reformas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:#1f2d3d;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 60px;
+    min-height:90px;
+}
+
+header h1{
+    font-size:34px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+
+/* ===== CONTENIDO ===== */
+.container{
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 40px;
+}
+
+.title{
+    font-size:30px;
+    margin-bottom:50px;
+    color:#1f2d3d;
+}
+
+/* ===== GRID BLOQUES ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:35px;
+}
+
+.block{
+    position:relative;
+    height:220px;
+    border-radius:12px;
+    overflow:hidden;
+    text-decoration:none;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-size:cover;
+    background-position:center;
+    transition:0.4s;
+}
+
+/* Oscurecer imagen */
+.block::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    transition:0.4s;
+}
+
+/* Texto encima */
+.block span{
+    position:relative;
+    font-size:20px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-align:center;
+    z-index:2;
+}
+
+.block:hover{
+    transform:translateY(-6px);
+}
+
+.block:hover::before{
+    background:rgba(0,0,0,0.3);
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#16202b;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:80px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Roman Tverd Reformas</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="trabajos.html">Trabajos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="title">Nuestros Trabajos</div>
+
+    <div class="grid">
+
+        <a class="block" href="banos-trabajos.html" style="background-image:url('banos-portada.jpg');">
+            <span>Baño</span>
+        </a>
+
+        <a class="block" href="cocina-trabajos.html" style="background-image:url('cocina-portada.jpg');">
+            <span>Cocina</span>
+        </a>
+
+        <a class="block" href="pintura-trabajos.html" style="background-image:url('pintura-portada.jpg');">
+            <span>Pintura</span>
+        </a>
+
+        <a class="block" href="suelos-trabajos.html" style="background-image:url('suelos-portada.jpg');">
+            <span>Suelo</span>
+        </a>
+
+        <a class="block" href="ventanas-trabajos.html" style="background-image:url('ventanas-portada.jpg');">
+            <span>Instalación Ventanas</span>
+        </a>
+
+        <a class="block" href="instalaciones-trabajos.html" style="background-image:url('instalaciones-portada.jpg');">
+            <span>Mejoras Instalaciones</span>
+        </a>
+
+    </div>
+</div>
+
+<footer>
+© 2026 Roman Tverd Reformas · Todos los derechos reservados
+</footer>
+
+</body>
+</html>
